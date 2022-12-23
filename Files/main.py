@@ -3,39 +3,39 @@ import logging
 import time
 import telethon
 
-from Files.config import API
-from Files.config import admin_password
-from Files.config import api_hash, api_id
-from Files.config import Channels
-from Files.config import Words
-from Files.config import i_Words
-from Files.config import Messages
-from Files.config import Deleting
-from Files.config import DeletingWords
-from Files.config import DeletingIWords
-from Files.config import DeletingMessage
-from Files.config import AccountName
-from Files.config import AdminPassword
-from Files.config import titles_main
-from Files.config import titles_channels
-from Files.config import titles_confirmation
-from Files.config import titles_words
-from Files.config import titles_i_words
-from Files.config import titles_message
-from Files.config import ChannelsButtons
-from Files.config import MenuButtons
-from Files.config import ConfirmationButtons
-from Files.config import BackToMenuButtons
-from Files.config import WordsButtons
-from Files.config import I_WordsButton
-from Files.config import MessageButtons
+from config import API
+from config import admin_password
+from config import api_hash, api_id
+from config import Channels
+from config import Words
+from config import i_Words
+from config import Messages
+from config import Deleting
+from config import DeletingWords
+from config import DeletingIWords
+from config import DeletingMessage
+from config import AccountName
+from config import AdminPassword
+from config import titles_main
+from config import titles_channels
+from config import titles_confirmation
+from config import titles_words
+from config import titles_i_words
+from config import titles_message
+from config import ChannelsButtons
+from config import MenuButtons
+from config import ConfirmationButtons
+from config import BackToMenuButtons
+from config import WordsButtons
+from config import I_WordsButton
+from config import MessageButtons
 
-from Files.data import get_all_values
-from Files.data import insert_values
-from Files.data import del_values
-from Files.data import insert_many_values
+from data import get_all_values
+from data import insert_values
+from data import del_values
+from data import insert_many_values
 
-from Files.client import start_client
+from client import start_client
 
 
 from aiogram import Dispatcher, executor, types
