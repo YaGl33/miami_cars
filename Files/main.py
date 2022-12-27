@@ -631,11 +631,15 @@ async def dump_all_messages(channel, client):
             hash=0))
         if not history.messages:
             break
-        messages = history.messages
+       messages = history.messages
         for message in messages:
             for i in range(len(message.to_dict())):
-                all_messages.append(message.to_dict())
-            # all_messages.append(message.to_dict())
+                date = message.to_dict()['date'].replace(tzinfo=None)
+                # print(abs((date - datetime.now()).days) < 7)
+                if abs((date - datetime.now()).days) < 7:
+                    all_messages.append(message.to_dict())
+                else:
+                    break
         offset_msg = messages[len(messages) - 1].id
         total_messages = len(all_messages)
         if total_count_limit != 0 and total_messages >= total_count_limit:
