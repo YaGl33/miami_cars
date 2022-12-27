@@ -631,7 +631,7 @@ async def dump_all_messages(channel, client):
             hash=0))
         if not history.messages:
             break
-       messages = history.messages
+        messages = history.messages
         for message in messages:
             for i in range(len(message.to_dict())):
                 date = message.to_dict()['date'].replace(tzinfo=None)
