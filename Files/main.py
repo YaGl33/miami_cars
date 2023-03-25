@@ -146,7 +146,8 @@ async def handler(dp=dp):
             if sender.id not in answered:
                 # print("Auto message answered")
                 # print(answered, users_ids)
-                await client.send_message(sender.id, "Aloha")
+                await client.send_message(sender.id, "Рекламное сообщение было создано автоматически, "
+                                                     "для продолжения бронирования напишите нам на WhatsApp")
                 insert_values('auto_answered', str(sender.id), 'user_id')
 
 
