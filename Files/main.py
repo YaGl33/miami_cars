@@ -147,7 +147,7 @@ async def handler(dp=dp):
                 # print("Auto message answered")
                 # print(answered, users_ids)
                 await client.send_message(sender.id, "Рекламное сообщение было создано автоматически, "
-                                                     "для продолжения бронирования напишите нам на WhatsApp")
+                                                     "для продолжения бронирования напишите нам на WhatsApp: http://wa.me/17868089999")
                 insert_values('auto_answered', str(sender.id), 'user_id')
 
 
